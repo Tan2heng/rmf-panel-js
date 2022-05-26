@@ -25,14 +25,14 @@ interface StyledTabProps {
   label: string;
 }
 
-const StyledTab = withStyles((theme: Theme) =>
+const StyledTab : CSSProperties = withStyles((theme: Theme) =>
   createStyles({
     root: {
       textTransform: 'none',
       color: '#2e1534',
-      fontWeight: CSSProperties = { theme.typography.fontWeightRegular},
-      fontSize: CSSProperties = { theme.typography.pxToRem(15)},
-      marginRight: CSSProperties = { theme.spacing(0.5) },
+      fontWeight: theme.typography.fontWeightRegular,
+      fontSize:  theme.typography.pxToRem(15),
+      marginRight:  theme.spacing(0.5),
       '&:focus': {
         opacity: 1,
       },
