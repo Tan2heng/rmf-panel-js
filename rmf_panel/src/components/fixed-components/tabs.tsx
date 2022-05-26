@@ -30,7 +30,7 @@ const StyledTab : CSSProperties = withStyles((theme: Theme) =>
     root: {
       textTransform: 'none',
       color: '#2e1534',
-      fontWeight: theme.typography.fontWeightRegular,
+//       fontWeight: theme.typography.fontWeightRegular,
       fontSize:  theme.typography.pxToRem(15),
       marginRight:  theme.spacing(0.5),
       '&:focus': {
