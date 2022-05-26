@@ -25,20 +25,20 @@ interface StyledTabProps {
   label: string;
 }
 
-const StyledTab : CSSProperties = withStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      textTransform: 'none',
-      color: '#2e1534',
-//       fontWeight: theme.typography.fontWeightRegular,
-      fontSize:  theme.typography.pxToRem(15),
-      marginRight:  theme.spacing(0.5),
-      '&:focus': {
-        opacity: 1,
-      },
-    },
-  }),
-)((props: StyledTabProps) => <Tab disableRipple {...props} />);
+// const StyledTab : CSSProperties = withStyles((theme: Theme) =>
+//   createStyles({
+//     root: {
+//       textTransform: 'none',
+//       color: '#2e1534',
+// //       fontWeight: theme.typography.fontWeightRegular,
+//       fontSize:  theme.typography.pxToRem(15),
+//       marginRight:  theme.spacing(0.5),
+//       '&:focus': {
+//         opacity: 1,
+//       },
+//     },
+//   }),
+// )((props: StyledTabProps) => <Tab disableRipple {...props} />);
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
